@@ -2,12 +2,7 @@
 Miscelaneous
 */
 
-.row {
-    padding: 0;
-    margin: 0;
-}
-
-.container-fluid {
+.site-wrapper {
     margin: 0;
     padding: 0;
 }
@@ -16,13 +11,13 @@ Miscelaneous
 Navbar
 */
 
-#logo {
+.logo {
     width: 50px;
 }
 
 .navbar-light .navbar-nav .nav-link { /* Change link color */
     color: white;
-    text-shadow: 0 0 10px #2F4E6F;
+    text-shadow: 0 0 10px #2f4e6f;
 }
 
 .navbar .navbar-toggler { /* Change icon border color */
@@ -48,8 +43,14 @@ Home
 
 #home {
     height: 100vh;
-    background: linear-gradient(#2F4E6F, #cbd8e1);
-    color: #C8D7E3;
+    background: linear-gradient(#2f4e6f, #cbd8e1);
+    color: #c8d7e3;
+}
+
+.intro-div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .intro-text {
@@ -58,13 +59,12 @@ Home
 
 #arrow-down-icon {
     position: absolute;
-    bottom: 15%;
-
+    bottom: 10%;
 }
 
 #arrow-down-icon a {
     color: white;
-    padding: 15px 15px;
+    padding: 15px;
 }
 
 
@@ -74,7 +74,7 @@ Home
 #about {
     height: 100vh;
     background-color: #cbd8e1;
-    color: #2F4E6F;
+    color: #2f4e6f;
 }
 
 #about-selfie img {
@@ -95,13 +95,13 @@ Home
 }
 
 .social-links a {
-    color: #2F4E6F;
+    color: #2f4e6f;
 }
 
 /* Projects */
 
 #projects {
-    background: linear-gradient(#cbd8e1, #2F4E6F);
+    background: linear-gradient(#cbd8e1, #2f4e6f);
     color: white;
 }
 
@@ -143,7 +143,7 @@ Home
 
 /* Footer */
 footer {
-    background-color: #2F4E6F;
+    background-color: #2f4e6f;
     color: white;
 }
 
@@ -156,7 +156,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     /* Navbar */
-    #logo {
+    .logo {
         width: 64px;
     }
 
@@ -210,7 +210,7 @@ footer {
 
 @media screen and (min-width: 992px) {
     /* Navbar */
-    #logo {
+    .logo {
         width: 75px;
     }
 
